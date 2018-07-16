@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+
+<div style="width: 500px;margin: 50px auto;">
+    <form class="form-horizontal" method="post" action="/regist_submit/" novalidate>
+        {% csrf_token %}
+    注册账户名&nbsp&nbsp<input type="text"  placeholder="输入不重复的账户名 " name="accout" value="" ><br><br>
+    注册密码&nbsp&nbsp<input type="text"  placeholder="输入注册密码 " name="passwd1" value="" ><br><br>
+    确认注册密码&nbsp&nbsp<input type="text"  placeholder="确认注册密码 " name="passwd2" value="" ><br><br>
+    <button type="submit" class="btn btn-success">注册</button>
+
+    </form>
+    <div>
+
+
+    </div>
+</div>
+</body>
+</html>
