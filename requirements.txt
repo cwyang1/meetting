@@ -42,7 +42,7 @@ olefile==0.45.1
 openpyxl==2.5.1
 pandas==0.22.0
 pefile==2017.11.5
-Pillow==4.3.0
+Pillow==6.2.0
 pipreqs==0.4.9
 PyExecJS==1.4.1
 PyInstaller==3.3.1
